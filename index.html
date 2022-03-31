@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursuri de echitație</title>
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 380px)' href="phone.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 381px) and (max-width: 700px)' href="tableta.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 701px)' href="desktop.css"/>
+    <script src="./editare.js"></script>
+    
+</head>
+
+<body>
+    <main>
+    <div class="bara_sus">
+        <img id="logo" src="./pngwing.com (12).png" onclick="goback()">    
+        <nav>
+                <div class="orice">
+                    <li class="link-container" onclick="goback()">Home</li>
+                    <li class="link-container" onclick="gallery()">Galerie</li>
+                    <li class="link-container" onclick="redirect2()">Prețuri</li>
+                    <li class="link-container" onclick="redirect()">Contact</li>
+                    <li class="link-container" onclick="cont()">Contul meu</li>
+                </div>
+        </nav>  
+    </div>
+
+    
+<div class="mare">
+    <div class="home_meniu_all">
+        <li class="home_meniu despre" onclick="despre_text()">  Despre noi</li>
+        <li class="home_meniu even" onclick="despre_even()">  Evenimente</li>
+        <li class="home_meniu serv" onclick="despre_serv()">  Servicii</li>
+    </div>
+
+    <div id="scris">
+        <br><br>
+        <p class="desc">Înființat în primăvara anului 2010, după doar un an de construcţii într-o modernă bază ecvestră, Clubul de Echitaţie se doreşte a fi un loc unde iubitorii de cai pot veni să se relaxeze, să se plimbe călare pe câmp sau prin pădure, să înveţe să călărească sau doar să-i privească pe alţii, savurând o ceaşcă de cafea aromată, sau – pur şi simplu – ascultând muzică.</p>
+        <h3>Avantajele clubului de echitaţie</h3>
+        <li>Construcţie nou-nouta, din lemn, cel mai ecologic şi „sănătos” material de construcţie, cu întreagă infrastructură a unei construcţii moderne</li>
+        <li>Oferă toate facilităţile pentru o cazare optimă a cailor – boxe mari, cu padocuri exterioare individuale, duşuri cu apă caldă pentru cai, alimente (lucernă, fân şi ovăz) de cea mai bună calitate; spaţii utilitare accesorii mari şi funcţionale;</li>
+        <li>Posibilităţi de plimbare călăre la câmp sau în pădure;</li>
+        <h4>Cum arată baza hipică?</h4>
+        <li>Clubul dispune de 50 de boxe pentru cai, de dimensiuni 3,7m / 4m, 40 dintre ele având acces direct în padocuri exterioare individuale, cu dimensiuni de 3,7m / 5m, calul având posibilitatea să stea cat mai mult timp afară, în aer liber, chiar nesupravegheat. Şase duşuri cu apa caldă şi rece, dintre care patru sunt în interior (deci, pot fi folosite şi iarna) şi două solarii pentru uscare/încălzire după duş, stau la dispoziţia căluţilor cazaţi aici. Adăpători automate, cu sistem de încălzire a apei la temperatură dorită – lucru foarte important pentru iernile geroase – sunt, de asemenea, montate în fiecare boxă.</li>
+        <li>În zona funcţională a grajdului se mai găsesc: două şelării, patru locuri pentru curăţat calul, zonă de spălat harnaşamentul calului, grupuri sanitare, loc pentru activitatea veterinarului şi loc special pentru potcovit.</li> 
+        <br>
+    </div>
+
+    <div id="scris2">
+        <br>
+        <li>Eveniment 2019: Concursul National de Sarituri peste Obstacole - 20.09.2019</li>
+        <div class="pic7">
+            <img class="imag2 img7" src="https://static.playtech.ro/wp-content/uploads/2018/05/curse-de-cai.jpg">
+            <div class="bla">
+                <p>Premiul I: Bruno</p>
+            </div>
+        </div>
+
+        <li>Eveniment 2020: Concursul National de Sarituri peste Obstacole - 20.09.2020</li>
+        <div class="pic8">
+            <img class="imag2 img8" src="https://www.opiniatimisoarei.ro/wp-content/uploads/2017/09/herneacova-sarituri-cai-1-700x336.jpg">
+            <div class="bla8">
+                <p>Premiul III: Linda</p>
+            </div>
+        </div>
+
+        <li>Eveniment 2021: Concursul National de Sarituri peste Obstacole - 20.09.2021</li>
+        <div class="pic9">
+            <img class="imag2 img9" src="https://www.sensolifestyle.ro/uploads/articles/pictures/443260_486681.jpg">
+            <div class="bla9">
+                <p>Premiul II: Bruno</p>
+            </div>
+        </div>
+
+        <li>Eveniment 2022: Concursul National de Sarituri peste Obstacole - 20.09.2022</li>
+        <div class="pic10">
+            <img class="imag2 img10" src="https://life.ro/wp-content/uploads/2019/11/totilas.jpg">
+            <div class="bla10">
+                <p>Premiul I: Marchăl</p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="scris3">
+        <br>
+        <h6>Serviciile clubului de echitație</h6>
+        <p class="ser">Clubul de Echitație îi așteaptă pe toți iubitorii de caii și călărie, amatori și profesioniști deopotrivă, cu o varietate de servicii la standarde internaționale.</p>
+        <p class="tit"><span style="font-weight: bold;">Sunt asigurate:</span/p>
+            <li class="aranj"> cazarea cailor în boxe cu dimensiuni de 3,7m / 4m, fiecare cu ieşire în padoc exterior individual, de 3,7m / 5m;</li>
+            <li class="aranj"> alimentaţia de baza – lucernă (sau fân, opţional) şi ovăz; la cerere, pot fi adăugate şi suplimente nutritive şi alimentare;</li>
+            <li class="aranj"> igiena calului și curățarea boxei acestuia;</li>
+            <li class="aranj"> acces la duşuri interioare şi exterioare;</li>
+        <p class="tit"><span style="font-weight: bold;">Oferim:</span/p>
+            <li class="aranj">lecții de călărie pentru diferite niveluri de pregătire, de la începători la avansaţi;</li>
+            <li class="aranj">lecțiile practice de călărie sunt însoțite de lecții teoretice, cursuri, cu vizionari de filme și diapozitive pe teme ecvestre;</li>
+    </div>
+
+    
+</div>
+    
+
+
+    
+</main>
+
+
+</body>
+
+</html>

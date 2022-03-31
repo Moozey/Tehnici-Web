@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./horse_phone.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+
+nav {
+    background-color: grey;
+    border: 1px;
+    border-radius: 1cm;
+    width: 100%;
+    margin-left: 20%;
+    height: 50%;
+    margin-top: 1.6%;
+}
+
+.link-container {
+    list-style-type: none;
+    padding-left: 3%;
+    padding-right: 5%;
+    font-size:2.3vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-flex;
+    text-shadow: 5%;
+}
+.link-container:active {
+    transform:scale3d(1.2, 1.2, 1.2);
+    background-color:cadetblue;
+    border: 1px;
+    border-radius: 1cm;
+
+}
+
+
+#logo {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.bara_sus{
+    display: inline-flex;
+    width: 100%;
+}
+
+.harta {
+    overflow:hidden;
+    padding-bottom:80%;
+    position:relative;
+    height:0;
+}
+
+.harta iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding-bottom:40%;
+}
+
+header {
+    text-decoration: underline;
+    text-decoration-color:darkolivegreen;
+}
+
+#poza_contact {
+    max-width: 40%;
+    max-height: 40%;
+    margin-left: 20%;
+    
+}
+
+.jos {
+    display: inline-flex;
+
+    
+
+}
+.text_jos {
+    text-align: center;
+    margin-left: 5%;
+}
+h1{
+    font-size: 250%;
+}
+
+.despre_noi {
+    font-size: 250%;
+    margin-left: 5%;
+}
+.cai {
+    font-size: 250%;
+    margin-left: 5%;
+}
+
+.evenimente {
+    font-size: 250%;
+    margin-left: 5%;
+}
+.servicii {
+    font-size: 250%;
+    margin-left: 5%;
+}

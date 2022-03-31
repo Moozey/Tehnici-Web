@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursuri de echitație</title>
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 380px)' href="phone.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 381px) and (max-width: 700px)' href="tableta.css"/>
+    <link rel="stylesheet" media='screen and (min-width: 701px)' href="desktop.css"/>
+    <script src="./editare.js"></script>
+    
+</head>
+
+<body>
+</main>
+
+<div class="bara_sus">
+    <img id="logo" src="./pngwing.com (12).png" >    
+    <nav>
+            <div class="orice">
+                <li class="link-container" onclick="goback()">Home</li>
+                <li class="link-container" onclick="gallery()">Galerie</li>
+                <li class="link-container" onclick="redirect2()">Prețuri</li>
+                <li class="link-container" onclick="redirect()">Contact</li>
+                <li class="link-container" onclick="cont()">Contul meu</li>
+            </div>
+        </nav>  
+</div>
+
+
+<div id="log_in">
+    <div id="inregistrare">
+      <p>Inregistreaza-te</p>  
+      <input type="text" placeholder="Nume" id="in"><br>
+      <input type="text" placeholder="Prenume" id="in"><br>
+      <input type="text" placeholder="Email" id="in"><br>
+      <input type="text" placeholder="Telefon" id="in"><br>
+      <input type="password" placeholder="Parola" id="in"><br>
+      <button class="inreg" onclick="ms()">Inregistreaza-te</button>
+    </div>
+    <p id="ura">URAA! Te-ai înregistrat cu succes!!!</p>
+
+    <div id="autentificare">
+        <p>Autentificare</p>  
+        <input type="text" placeholder="Email" id="in"><br>
+        <input type="password" placeholder="Parola" id="in"><br>
+        <button class="inreg" onclick="ms()">Autentificare</button>
+    </div>
+</div>
+
+
+<div class="aya">
+    <p id="but_aut" onclick="afis_aut()">
+        Autentificare
+    </p>
+    <br>
+    <p id="but_inreg" onclick="afis_inreg()">
+        Inregistrare
+    </p>
+</div>
+
+
+</main>
+</body>
+</html>
