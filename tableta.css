@@ -1,106 +1,583 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background-image: url('./horse_tableta.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%, 100%;
+  background-image: url("./horse_tableta.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
 }
 nav {
-    background-color: grey;
-    border: 1px;
-    border-radius: 1cm;
-    width: 100%;
-    margin-left: 20%;
-    height: 50%;
-    margin-top: 1.6%;
+  background-color: grey;
+  border: 1px;
+  border-radius: 1cm;
+  width: 100%;
+  margin-left: 20%;
+  height: 50%;
+  margin-top: 1.6%;
 }
 
 .link-container {
-    list-style-type: none;
-    padding-left: 3%;
-    padding-right: 5%;
-    font-size:2.3vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: inline-flex;
-    text-shadow: 5%;
+  list-style-type: none;
+  padding-left: 3%;
+  padding-right: 5%;
+  font-size: 2.3vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-flex;
+  text-shadow: 5%;
 }
 .link-container:active {
-    transform:scale3d(1.2, 1.2, 1.2);
-    background-color:cadetblue;
-    border: 1px;
-    border-radius: 1cm;
-
+  transform: scale3d(1.2, 1.2, 1.2);
+  background-color: cadetblue;
+  border: 1px;
+  border-radius: 1cm;
 }
-
 
 #logo {
-    max-width: 10%;
-    max-height: 10%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
-.bara_sus{
-    display: inline-flex;
-    width: 100%;
+.bara_sus {
+  display: inline-flex;
+  width: 100%;
 }
 
 .harta {
-    overflow:hidden;
-    padding-bottom:60%;
-    position:relative;
-    height:0;
 }
 
 .harta iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    padding-bottom:40%;
+  width: 100%;
 }
 
 header {
-    text-decoration: underline;
-    text-decoration-color:darkolivegreen;
+  text-decoration: underline;
+  text-decoration-color: darkolivegreen;
 }
 
 #poza_contact {
-    max-width: 40%;
-    max-height: 40%;
-    margin-left: 20%;
-    
+  max-width: 55%;
+  max-height: 40%;
+  margin-left: 5%;
 }
 
 .jos {
-    display: inline-flex;
-
-    
-
+  display: inline-flex;
+  background-image: url(./paper.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
 }
 .text_jos {
-    text-align: center;
-    margin-left: 5%;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 2%;
 }
-h1{
-    font-size: 250%;
+
+h1 {
+  font-size: 250%;
 }
 
 .despre_noi {
-    font-size: 250%;
-    margin-left: 5%;
+  font-size: 250%;
+  margin-left: 5%;
 }
 .cai {
-    font-size: 250%;
-    margin-left: 5%;
+  font-size: 250%;
+  margin-left: 5%;
 }
 
 .evenimente {
-    font-size: 250%;
-    margin-left: 5%;
+  font-size: 250%;
+  margin-left: 5%;
 }
 .servicii {
-    font-size: 250%;
-    margin-left: 5%;
+  font-size: 250%;
+  margin-left: 5%;
+}
+
+#inregistrare {
+  display: none;
+}
+#autentificare {
+  display: none;
+}
+#ura {
+  display: none;
+}
+
+#but_aut {
+  text-align: center;
+  font-size: 3vw;
+  background-color: rgb(30, 131, 97);
+  border: 2px solid rgb(6, 61, 54);
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 50%;
+}
+
+#but_inreg {
+  text-align: center;
+  font-size: 3vw;
+  background-color: rgb(30, 131, 97);
+  border: 2px solid rgb(6, 61, 54);
+  border-radius: 50%;
+  width: 20%;
+  margin-left: 40%;
+}
+
+.aya {
+  margin-top: 10%;
+}
+
+#but_aut:active {
+  transform: scale(2);
+}
+
+#but_inreg:active {
+  transform: scale(2);
+}
+
+#log_in {
+  margin-left: 32vw;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(255, 246, 233);
+  width: 35vw;
+  height: 30vw;
+  animation: vine 300ms ease-in-out;
+  color: rgb(173, 136, 214);
+  display: none;
+}
+.home_meniu {
+  padding-left: 3%;
+  padding-right: 5%;
+  font-size: 2.5vw;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-shadow: 10%;
+  border: 1px;
+  border-radius: 1cm;
+  box-shadow: 0 2px rgb(228, 200, 139);
+}
+.home_meniu_all {
+  width: 40vw;
+  margin-top: 7%;
+  margin-left: 2%;
+  text-shadow: 5%;
+  color: lightblue;
+
+  animation: anima 300ms ease-in-out;
+}
+@keyframes anima {
+  0% {
+    display: none;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    display: block;
+  }
+}
+.home_meniu:active {
+  transform: scale3d(1, 1, 1);
+  background-color: rgb(179, 113, 51);
+  border: 1px;
+  box-shadow: 0 5px rgb(228, 200, 139);
+  transform: translateY(2px);
+}
+
+#scris {
+  background-image: url("echitatie1.jpg");
+  border-style: groove;
+  border-radius: 1cm;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 5%;
+  display: none;
+  font-size: 100%;
+  color: rgb(83, 226, 179);
+}
+h3 {
+  font-size: 150%;
+  color: rgb(221, 218, 22);
+}
+h4 {
+  font-size: 150%;
+  color: rgb(221, 218, 22);
+}
+.desc {
+  color: rgb(214, 202, 154);
+}
+
+.imag1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#imagini {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pic1 {
+  position: relative;
+}
+.img1 {
+  z-index: 9;
+}
+
+.pic1:hover .img1 {
+  opacity: 20%;
+}
+.pic1:hover .pic1text {
+  display: block;
+}
+
+.pic1text {
+  position: absolute;
+  display: none;
+  margin-top: -60%;
+  font-size: 2.5vw;
+  margin-left: 26%;
+}
+
+.pic2 {
+  position: relative;
+}
+.img2 {
+  z-index: 9;
+}
+
+.pic2:hover .img2 {
+  opacity: 20%;
+}
+.pic2:hover .pic2text {
+  display: block;
+}
+
+.pic2text {
+  position: absolute;
+  display: none;
+  margin-top: -45%;
+  font-size: 2.5vw;
+  margin-left: 17%;
+}
+
+.pic3 {
+  position: relative;
+}
+.img3 {
+  z-index: 9;
+}
+
+.pic3:hover .img3 {
+  opacity: 20%;
+}
+.pic3:hover .pic3text {
+  display: block;
+}
+
+.pic3text {
+  position: absolute;
+  display: none;
+  margin-top: -60%;
+  font-size: 2.5vw;
+  margin-left: 26%;
+}
+
+.pic4 {
+  position: relative;
+}
+.img4 {
+  z-index: 9;
+}
+
+.pic4:hover .img4 {
+  opacity: 20%;
+}
+.pic4:hover .pic4text {
+  display: block;
+}
+
+.pic4text {
+  position: absolute;
+  display: none;
+  margin-top: -50%;
+  font-size: 2.5vw;
+  margin-left: 26%;
+  color: rgb(207, 196, 196);
+}
+
+.pic5 {
+  position: relative;
+}
+.img5 {
+  z-index: 9;
+}
+
+.pic5:hover .img5 {
+  opacity: 20%;
+}
+.pic5:hover .pic5text {
+  display: block;
+}
+
+.pic5text {
+  position: absolute;
+  display: none;
+  margin-top: -36%;
+  font-size: 2.5vw;
+  margin-left: 9%;
+  color: rgb(207, 196, 196);
+}
+
+.pic6 {
+  position: relative;
+}
+.img6 {
+  z-index: 9;
+}
+
+.pic6:hover .img6 {
+  opacity: 20%;
+}
+.pic6:hover .pic6text {
+  display: block;
+}
+
+.pic6text {
+  position: absolute;
+  display: none;
+  margin-top: -55%;
+  font-size: 2.5vw;
+  margin-left: 46%;
+  color: rgb(207, 196, 196);
+}
+
+.imag2 {
+  max-width: 20vw;
+  max-height: 20vh;
+  margin-left: 40%;
+}
+#scris2 {
+  width: 80%;
+  margin-left: 10%;
+  background-image: url("https://wallpaperaccess.com/full/1302751.jpg");
+  /* border-radius: 7%; */
+  display: none;
+  border-style: groove;
+  border-radius: 1cm;
+}
+.pic7 {
+  position: relative;
+}
+.img7 {
+  z-index: 9;
+}
+
+.pic7:hover .img7 {
+  opacity: 50%;
+}
+.pic7:hover .bla {
+  display: block;
+}
+
+.bla {
+  position: absolute;
+  display: none;
+  margin-top: -8%;
+  font-size: 1.5vw;
+  margin-left: 43%;
+  color: rgb(0, 0, 0);
+}
+
+.pic8 {
+  position: relative;
+}
+.img8 {
+  z-index: 9;
+}
+
+.pic8:hover .img8 {
+  opacity: 50%;
+}
+.pic8:hover .bla8 {
+  display: block;
+}
+.bla8 {
+  position: absolute;
+  display: none;
+  margin-top: -8%;
+  font-size: 1.5vw;
+  margin-left: 46%;
+  color: rgb(0, 0, 0);
+}
+
+.pic9 {
+  position: relative;
+}
+.img9 {
+  z-index: 9;
+}
+
+.pic9:hover .img9 {
+  opacity: 50%;
+}
+.pic9:hover .bla9 {
+  display: block;
+}
+.bla9 {
+  position: absolute;
+  display: none;
+  margin-top: -8%;
+  font-size: 1.5vw;
+  margin-left: 42%;
+  color: rgb(0, 0, 0);
+}
+
+.pic10 {
+  position: relative;
+}
+.img10 {
+  z-index: 9;
+}
+
+.pic10:hover .img10 {
+  opacity: 50%;
+}
+.pic10:hover .bla10 {
+  display: block;
+}
+.bla10 {
+  position: absolute;
+  display: none;
+  margin-top: -8%;
+  font-size: 1.5vw;
+  margin-left: 42.5%;
+  color: rgb(0, 0, 0);
+}
+
+#scris2 li {
+  color: rgb(8, 92, 40);
+  font-size: 2vw;
+  text-align: center;
+}
+#scris3 {
+  width: 80%;
+  margin-left: 10%;
+  background-image: url("caluti.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%;
+  border-radius: 30%; */
+  display: none;
+  border-style: groove;
+  border-radius: 1cm;
+}
+h6 {
+  font-size: 3vw;
+  text-align: center;
+  color: lightseagreen;
+}
+
+.ser {
+  font-size: 2vw;
+  text-align: center;
+  color: chocolate;
+}
+
+.aranj {
+  color: rgb(212, 141, 91);
+  text-align: center;
+}
+.tit {
+  color: lightseagreen;
+  margin-left: 7%;
+  font-size: 1.5vw;
+}
+
+.titluri1 {
+  background-color: aliceblue;
+}
+
+.a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.b {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  margin-left: 22%;
+}
+
+.titluri2 {
+  background-color: aliceblue;
+}
+
+.c {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.d {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  margin-left: 6%;
+}
+
+.titluri3 {
+  background-color: aliceblue;
+}
+
+.e {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.f {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  margin-left: 6%;
+}
+
+.titluri4 {
+  background-color: aliceblue;
+}
+
+.g {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.h {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  margin-left: 6%;
+}
+
+.titluri5 {
+  background-color: aliceblue;
+}
+
+.i {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.j {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  margin-left: 6%;
+}
+#ceva {
+  color: beige;
+  margin-left: 90vw;
+  margin-top: -57vh;
 }
