@@ -1,3 +1,5 @@
+freq_images = [false, false, false, false, false, false, false, false, false];
+
 function redirect() {
   window.location.href = "contact.html";
 }
@@ -164,7 +166,7 @@ var x = setInterval(function () {
   var today = new Date();
   var time =
     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  document.getElementById("ceva").innerHTML = time;
+  //document.getElementById("ceva").innerHTML = time;
 }, 1000);
 
 window.onload = function () {
@@ -183,11 +185,19 @@ window.onload = function () {
       "7.jpeg",
       "8.jpeg",
     ];
-
+    //vector de frecventa pentru pozele random ce urmeaza a fi adaugate
     random_index = Math.floor(Math.random() * 8);
-    console.log(random_index);
-  }
+    while (freq_images[random_index]) {
+      random_index = Math.floor(Math.random() * 8);
+    }
+    freq_images[random_index] = true;
 
+    var new_poz = document.createElement("img");
+    image = image_array[random_index];
+    new_poz.src = `./poze_cai/${image}`;
+    document.body.appendChild(new_poz);
+    // console.log(random_index);
+  }
   //console.log(bara.getBoundingClientRect());
 };
 
